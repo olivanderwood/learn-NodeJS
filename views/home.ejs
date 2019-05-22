@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src ="handle.js"></script>
+    <title>demo chat</title>
+    
+    <script>
+     
+    </script>
+
+    <link rel="stylesheet" href="layout.css " type="text/css"> 
+
+</head>
+<body>
+    <div id="wrapper">
+
+            <div class="loginForm">
+                <h3>Enter Your Name</h3>
+                <input type="text" id="txtUsername" />
+                <input type="button" value="login" id="btnLogin" />
+            </div>
+            <div class="chatForm">
+                
+                <div id="left">
+                    <div id="boxShowUserOnline">User Online</div>
+                    <div id="boxContend"></div>
+                </div>
+                <div id="right">
+                    <div id="sayHi">hello <span id="currentUser">tom</span>
+
+                        <input type="button" id="btnLogout" value="Logout">
+                    </div>
+                    <div id="listMessage">
+
+                    </div>
+
+                    <input type="text" id="txtMessage" />
+                    <input type="button" id="btnSendMessage" value="Send">
+                </div>
+
+            </div>
+    </div>
+        
+</body>
+</html>
